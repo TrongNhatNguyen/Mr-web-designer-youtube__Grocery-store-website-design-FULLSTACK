@@ -24,7 +24,8 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost:8080/';
+    public $baseURL = 'http://mylocalapp-codeigniter.test/Mr-web-designer-youtube-Grocery-store-Hugovesta/';
+    // public $baseURL = 'http://localhost:8080/';
 
     /**
      * --------------------------------------------------------------------------
@@ -56,7 +57,8 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $uriProtocol = 'REQUEST_URI';
+    public $uriProtocol = 'PATH_INFO';
+    // public $uriProtocol = 'REQUEST_URI';
 
     /**
      * --------------------------------------------------------------------------
