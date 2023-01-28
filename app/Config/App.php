@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://mylocalapp-codeigniter.test/Mr-web-designer-youtube-Grocery-store-Hugovesta/';
+    public $baseURL = 'http://hugovesta-codeigniter.test/';
     // public $baseURL = 'http://localhost:8080/';
 
     /**
