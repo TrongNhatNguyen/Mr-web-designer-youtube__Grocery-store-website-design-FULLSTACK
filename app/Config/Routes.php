@@ -28,14 +28,19 @@ $routes->set404Override();
 // $routes->setAutoRoute(false);
 
 /*
- * --------------------------------------------------------------------
+ * ====================================================================
  * Route Definitions
- * --------------------------------------------------------------------
+ * ====================================================================
  */
 
-// We get a performance increase by specifying the default
-// route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// ĐƯỜNG DẪN URL CHO FRONT-END
+$routes->get('/home', [\App\Controllers\FRONT_END\HomeController::class, 'index'], ['as' => 'home']);
+$routes->addRedirect('/', '/home');
+
+// ---------------------------------------
+// ĐƯỜNG DẪN URL CHO BACK-END
+$routes->get('/admin/dashboard', [\App\Controllers\BACK_END\HomeAdmin::class, 'index'], ['as' => 'admin_dashboard']);
+$routes->addRedirect('/admin', 'admin_dashboard');
 
 /*
  * --------------------------------------------------------------------
